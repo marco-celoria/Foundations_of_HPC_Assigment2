@@ -1,0 +1,92 @@
+Strong scalability
+::::::::::::::::::::::::::::
+Serial
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Serial kd tree: 37.8847 sec elapsed
+::::::::::::::::::::::::::::
+OpenMP
+OMP_NUM_THREADS=1
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Number of threads=1
+OpenMP kd tree: 36.8572 sec elapsed
+============================
+OMP_NUM_THREADS=2
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Number of threads=2
+OpenMP kd tree: 21.6287 sec elapsed
+============================
+OMP_NUM_THREADS=4
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Number of threads=4
+OpenMP kd tree: 13.3102 sec elapsed
+============================
+OMP_NUM_THREADS=8
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Number of threads=8
+OpenMP kd tree: 9.72101 sec elapsed
+============================
+OMP_NUM_THREADS=16
+N=100000000
+Serial kd-tree
+Generating 100000000 random double in [0,1]
+Number of points=100000000
+Number of threads=16
+OpenMP kd tree: 7.26727 sec elapsed
+============================
+::::::::::::::::::::::::::::
+MPI
+MPI -np=1
+N=100000000
+MPI kd-tree
+Generating 100000000 random double in [0,1]
+Number of processes=1
+Number of points=100000000
+[MPI kd tree] Min: 35.735761 Max: 35.735761 Avg: 35.735761
+============================
+MPI -np=2
+N=100000000
+MPI kd-tree
+Generating 100000000 random double in [0,1]
+Number of processes=2
+Number of points=100000000
+[MPI kd tree] Min: 19.860652 Max: 20.225521 Avg: 20.043087
+============================
+MPI -np=4
+N=100000000
+MPI kd-tree
+Generating 100000000 random double in [0,1]
+Number of processes=4
+Number of points=100000000
+[MPI kd tree] Min: 11.418772 Max: 11.679689 Avg: 11.545146
+============================
+MPI -np=8
+N=100000000
+MPI kd-tree
+Generating 100000000 random double in [0,1]
+Number of processes=8
+Number of points=100000000
+[MPI kd tree] Min: 6.706292 Max: 6.830646 Avg: 6.766366
+============================
+MPI -np=16
+N=100000000
+MPI kd-tree
+Generating 100000000 random double in [0,1]
+Number of processes=16
+Number of points=100000000
+[MPI kd tree] Min: 3.730670 Max: 3.889892 Avg: 3.821470
+============================
